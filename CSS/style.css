@@ -1,0 +1,526 @@
+body
+{
+    
+    background: #273238;
+    font-family: 'Roboto', thin;
+    height: 500px;
+}
+
+/*MenuButton*/
+a.nav-expander
+{
+    background: rgba(0, 0, 0, .3);
+    color: #FFFFFF;
+    filter: brightness(80%);
+    font-size: 15px;
+    height: 50px;
+    width: 130px;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 49px;
+    padding-right: 49px;
+    position: absolute;
+    text-decoration: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: 12;
+
+    -webkit-transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s;
+    transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s;
+ 
+}
+ 
+a.nav-expander:hover
+{
+    background: rgba(0, 0, 0, .8);
+    filter: brightness(100%);
+    cursor: pointer;
+    
+    -webkit-transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s, background 0.2s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s, background 0.2s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s, background 0.2s ease-in-out 0s;
+    transition: right 0.3s ease-in-out 0s, filter 0.3s ease-in-out 0s, background 0.2s ease-in-out 0s;
+}
+
+#menuButton, #menuButtonTop, #menuButtonBottom
+{
+    height: 2px;
+    background: white;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 6px;
+    margin-top: 6px;
+    
+    -webkit-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -moz-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -o-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+}
+
+a.nav-expander:hover #menuButtonTop, a.nav-expander:hover #menuButtonBottom
+{
+    margin-left: 25%;
+    width: 50%;
+    
+    -webkit-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -moz-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    -o-transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+    transition: width 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+}
+ 
+a.nav-expander.fixed
+{
+  position: fixed;
+}
+ 
+.nav-expanded a.nav-expander.fixed
+{
+    right: 20em;
+}
+
+nav
+{
+  background: rgba(0, 0, 0, .8);
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 2000;
+ 
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+
+.nav-expanded nav
+{
+  right: 0;
+}
+ 
+body.nav-expanded
+{
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+ 
+#nav-close
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.navbar-inverse
+{
+    background-color: #222;
+    border: 0px;
+    
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .8), transparent);
+    background: -o-linear-gradient(rgba(0, 0, 0, .8), transparent);
+    background: -moz-linear-gradient(rgba(0, 0, 0, .8), transparent);
+    background: linear-gradient(rgba(0, 0, 0, .8), transparent);
+}
+
+.main-menu
+{
+    padding-top: 5px;
+}
+ 
+.main-menu li
+{
+    border-bottom: 1px solid #323949;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 12px;
+}
+ 
+.main-menu li a
+{
+    color: #6F7D8C;
+    text-decoration: none;
+}
+ 
+.main-menu li a:hover
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ 
+.main-menu li .sub-nav
+{
+  border-bottom: 0px;
+  padding: 4px;
+}
+ 
+.main-menu a .caret
+{
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+    margin-top: 8px;
+}
+ 
+.main-menu a:hover .caret
+{
+	border-top-color: #4f5963;
+}
+ 
+.main-menu li.open > a > .caret
+{
+	border-top: none;
+	border-bottom: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+ 
+.main-menu li.open > a:hover > .caret
+{
+	border-bottom-color: #4f5963;
+}
+ 
+.icon:before
+{
+    text-transform: none;
+}
+ 
+.main-menu li > a > span.icon
+{
+    float: right;
+    margin: 0.1em 1.7em -0.1em 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+ 
+}
+ 
+.main-menu li > a:hover >span.icon
+{
+    float: right;
+    margin: 0.1em 0.8em -0.1em 0;
+    opacity: 1;
+}
+
+.navbar-brand
+{
+    padding: 8px;
+    filter: brightness(80%);
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand:hover
+{
+    filter: brightness(100%);
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand img
+{
+    height: 100%;
+}
+
+
+#header1
+{
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+.backgroundImg
+{
+    position: absolute;
+    background-image: url("/assets/headshot1s.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    animation: backBlur 5s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes backBlur 
+{
+    0%
+    {
+        filter: blur(0px);
+    }
+    
+    25%
+    {
+        filter: blur(0px);
+    }
+    
+    100%
+    {
+        filter: blur(9px);
+    }
+}
+
+#headerImage
+{
+/*    background-image: url("/assets/headshot1s.jpg");*/
+    background-size: cover;
+    /*background-position: center;*/
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    height: 810px;
+    width: cover;
+}
+
+.bar
+{
+    background: -webkit-linear-gradient(right, #663399, #F22613);
+    background: -o-linear-gradient(right, #663399, #F22613);
+    background: -moz-linear-gradient(right, #663399, #F22613);
+    background: linear-gradient(to right, #663399, #F22613);
+    
+    margin: 0 auto;
+    height: 2px;
+    width: 350px;
+}
+
+#titleBar
+{
+    position: relative;
+    opacity: 0;
+    bottom: 60px;
+    animation: textAppear 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.row
+{
+    width: 100%;
+}
+
+#nameBox
+{
+    position: relative;
+    font-family: 'Roboto', thin;
+    text-align: center;
+    color: white;
+    /*filter: drop-shadow(8px 8px 6px black);*/
+    height: 500px;
+    padding-top: 250px;
+    padding-bottom: 0px;
+    font-size: 50px;
+    /*border: 1px dotted red;*/
+}
+
+#nameBox h1
+{
+    font-size: 40px;
+    position: relative;
+    background: #273238;
+    opacity: 0;
+    bottom: 60px;
+    font-weight: 100;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 100;
+    animation: textAppear 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textAppear 
+{
+    0%
+    {
+        opacity: 0;
+        bottom: 60px;
+    }
+
+    100%
+    {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+h2
+{
+    text-align: center;
+    font-weight: 100;
+    line-height: 75px;
+}
+
+.row a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.glyphCont
+{
+    display: inline-block;
+}
+
+#glyphs
+{
+    opacity: 0;
+    float: left;
+    font-size: 25px;
+    margin-left: -10px;
+    padding-left: 0px;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+h2:hover #glyphs
+{
+    opacity: 1;
+    padding-left: 12px;
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#scrollDiv
+{
+    margin-top: 90px;
+    height: 70px;
+}
+
+#scrollLink
+{
+    height: 100%;
+}
+
+.scrollButton
+{
+    background: #273238;
+    position: relative;
+    height: 100%;
+    width: 40px;
+    bottom: 60px;
+    opacity: 0;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    border-color: #F22613;
+    
+    
+    animation: textAppear 2s;
+    animation-delay: 3.85s;
+    animation-fill-mode:forwards;
+}
+
+#navArrow
+{
+    position: relative;
+    color: white;
+    font-size: 25px;
+    animation: navMove 2s infinite;
+}
+
+@keyframes navMove 
+{
+    0%
+    {
+        opacity: 0;
+        top: 0px;
+    }
+    
+    55%
+    {
+        opacity: 1;
+        color: white;
+    }
+    
+    100%
+    {
+        color: #913D88;
+        opacity: 0;
+        top: 40px;
+    }
+}
+
+#header2
+{
+    background: #303d44;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    /*border: 1px solid green;*/
+}
+
+#header2 h1
+{
+    
+    background: #273238;
+    color: white;
+    letter-spacing: 5px;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+    text-align: center;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-left-color: #663399;
+    border-right-color: #F22613;
+}
+
+#programming
+{
+    background-image: url("/assets/sitting1s.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
