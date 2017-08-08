@@ -53,7 +53,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2000);
+        }, 2800);
         
     });
     
@@ -71,7 +71,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2000);
+        }, 2800);
         
     });
     
@@ -89,7 +89,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2000);
+        }, 2800);
         
     });
     
@@ -107,7 +107,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2000);
+        }, 3000);
         
     });
     
@@ -125,7 +125,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2000);
+        }, 2800);
         
     });
     
@@ -143,7 +143,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2000);
+        }, 2800);
         
     });
 
