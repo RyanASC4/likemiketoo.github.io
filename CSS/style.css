@@ -498,6 +498,7 @@ h2:hover #glyphs
     background-size: cover;
     background-position: center;
     padding: 50px;
+    padding-bottom: 100px;
     
     height: 650px;
     width: 100%;
@@ -507,7 +508,7 @@ h2:hover #glyphs
 #skillsDiv
 {
     background: #273238;
-    height: ;
+    height: 100%;
     border-left: 2px solid;
     border-right: 2px solid;
     border-left-color: #663399;
@@ -582,7 +583,6 @@ h2:hover #glyphs
 #codeExample
 {
     background: #6e7b82;
-    color: ;
     height: 100%;
     font-size: 30px;
     text-align: center;
@@ -665,3 +665,12 @@ h2:hover #glyphs
     border-right-color: #F22613;
 }
 
+#musicDiv
+{
+    background: rgba(39, 50, 56, .8);
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-left-color: #663399;
+    border-right-color: #F22613;
+}
