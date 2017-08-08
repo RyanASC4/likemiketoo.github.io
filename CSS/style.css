@@ -1,6 +1,5 @@
 body
 {
-    
     background: #273238;
     font-family: 'Roboto', thin;
     height: 500px;
@@ -292,62 +291,24 @@ body.nav-expanded
 
 #headerImage
 {
-/*    background-image: url("/assets/headshot1s.jpg");*/
-    background-size: cover;
-    /*background-position: center;*/
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin: 0;
+    /*background-image: url("/assets/headshot1s.jpg");*/
+    background-position: center;
     height: 810px;
-    width: cover;
-}
-
-.bar
-{
-    background: -webkit-linear-gradient(right, #663399, #F22613);
-    background: -o-linear-gradient(right, #663399, #F22613);
-    background: -moz-linear-gradient(right, #663399, #F22613);
-    background: linear-gradient(to right, #663399, #F22613);
-    
-    margin: 0 auto;
-    height: 2px;
-    width: 350px;
-}
-
-#titleBar
-{
-    position: relative;
-    opacity: 0;
-    bottom: 60px;
-    animation: textAppear 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-}
-
-.row
-{
-    width: 100%;
-}
-
-#nameBox
-{
-    position: relative;
+    padding-left: 0;
+    padding-right: 0;
     font-family: 'Roboto', thin;
     text-align: center;
+
     color: white;
-    /*filter: drop-shadow(8px 8px 6px black);*/
-    height: 500px;
     padding-top: 250px;
     padding-bottom: 0px;
-    font-size: 50px;
     /*border: 1px dotted red;*/
 }
 
-#nameBox h1
+#headerImage h1
 {
-    font-size: 40px;
     position: relative;
+    font-size: 40px;
     background: #273238;
     opacity: 0;
     bottom: 60px;
@@ -376,11 +337,33 @@ body.nav-expanded
     }
 }
 
-h2
+.bar
 {
-    text-align: center;
-    font-weight: 100;
-    line-height: 75px;
+    background: -webkit-linear-gradient(right, #663399, #F22613);
+    background: -o-linear-gradient(right, #663399, #F22613);
+    background: -moz-linear-gradient(right, #663399, #F22613);
+    background: linear-gradient(to right, #663399, #F22613);
+    
+    margin: 0 auto;
+    height: 2px;
+    width: 350px;
+}
+
+#titleBar
+{
+    position: relative;
+    opacity: 0;
+    bottom: 60px;
+    animation: textAppear 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.row
+{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
 }
 
 .row a
@@ -421,7 +404,7 @@ h2:hover #glyphs
 
 #scrollDiv
 {
-    margin-top: 90px;
+    margin-top: 250px;
     height: 70px;
 }
 
@@ -499,18 +482,23 @@ h2:hover #glyphs
     background: #273238;
     color: white;
     letter-spacing: 5px;
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+    text-align: center;
     width: 350px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
-    font-family: 'Roboto', thin;
-    font-weight: 100;
-    text-align: center;
     border-left: 2px solid;
     border-right: 2px solid;
     border-left-color: #663399;
     border-right-color: #F22613;
+}
+
+#programmingBar
+{
+    width: 100%;
 }
 
 #programming
@@ -519,8 +507,112 @@ h2:hover #glyphs
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    padding: 50px;
     
     height: 600px;
     width: 100%;
     margin: 0 auto;
+}
+
+#skillsDiv
+{
+    background: #273238;
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-left-color: #663399;
+    border-right-color: #F22613;
+}
+
+#skill1
+{
+    color: white;
+    text-align: center;
+}
+
+#skill1 h1
+{
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+}
+
+#skill1 h3
+{
+    font-family: 'Roboto', thin;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+.btn-default
+{
+    width: 100%;
+}
+
+#skill1 button
+{
+    background: transparent;
+    color: #942E6C;
+    width: 300px;
+    font-size: 20px;
+    outline: none;
+    border-color: #942E6C;
+    
+    -webkit-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -moz-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -o-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}
+
+#skill1 button:hover
+{
+    background: #942E6C;
+    color: white;
+    
+    -webkit-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -moz-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    -o-transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    transition: background 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}
+
+#skill2
+{
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+#codeExample
+{
+    background: #6e7b82;
+    color: ;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#blinker
+{
+    font-size: 30px;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink
+{
+    0%
+    {
+        opacity: 0;
+    }
+    
+    50%
+    {
+        opacity: 1;
+    }
+    
+    100%
+    {
+        opacity: 0;
+    }
 }
