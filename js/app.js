@@ -11,6 +11,12 @@ $(document).ready(function(){
         e.preventDefault();
         $('body').removeClass('nav-expanded');
     });
+    
+    $('.container-fluid').on('click',function(e)
+    {
+        e.preventDefault();
+        $('body').removeClass('nav-expanded');
+    });
 
     //Automatic Page scrolling
     var $root = $('html, body');
