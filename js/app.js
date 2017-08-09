@@ -107,7 +107,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 3000);
+        }, 3500);
         
     });
     
@@ -125,7 +125,7 @@ $(document).ready(function(){
         setTimeout(function()
         {
             clickDisabled = false;
-        }, 2800);
+        }, 4000);
         
     });
     
