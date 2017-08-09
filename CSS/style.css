@@ -692,7 +692,7 @@ h2:hover #glyphs
     margin: 0 auto;
 }
 
-#web1Link 
+#outer1 a
 {
     color: white;
 }
@@ -707,6 +707,7 @@ h2:hover #glyphs
     height: 380px;
     margin: 0 auto;
     padding-top: 150px;
+    border-radius: 20px;
     
     -webkit-transition: filter 0.3s ease-in-out 0s;
     -moz-transition: filter 0.3s ease-in-out 0s;
