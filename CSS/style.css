@@ -775,5 +775,46 @@ h2:hover #glyphs
 
 #aboutContent
 {
-    height: 500px;
+    margin: 0 auto;
+}
+
+#picJumbo
+{
+    background: #6e7b82;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#picJumbo h1
+{
+    color: #942E6C;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.col-xs-4 img
+{
+    height: 100px;
+}
+
+#aboutJumbo
+{
+    background: transparent;
+    margin: 0 auto;
+    padding: 30px;
+    height: 100%;
+}
+
+#aboutJumbo h3
+{
+    margin: 0 auto;
+    color: #AC2C56;
+}
+
+#aboutJumbo h3 a
+{
+    color: #dd5d86;
 }
