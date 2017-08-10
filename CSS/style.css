@@ -453,7 +453,7 @@ h2:hover #glyphs
     }
 }
 
-#header2, #header3, #header4, #header5
+#header2, #header3, #header4, #header5, #header6
 {
     background: #303d44;
     width: 100%;
@@ -466,7 +466,7 @@ h2:hover #glyphs
     /*border: 1px solid green;*/
 }
 
-#header2 h1, #header3 h1, #header4 h1, #header5 h1
+#header2 h1, #header3 h1, #header4 h1, #header5 h1, #header6 h1
 {
     
     background: #273238;
@@ -795,6 +795,20 @@ h2:hover #glyphs
     margin-bottom: 0px;
 }
 
+#aboutCont
+{
+    background-image: url("/assets/Mike4ss.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    
+    max-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .col-xs-4 img
 {
     height: 100px;
@@ -816,5 +830,89 @@ h2:hover #glyphs
 
 #aboutJumbo h3 a
 {
-    color: #dd5d86;
+    color: #ed5083;
+    text-decoration: none;
+    
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+#aboutJumbo h3 a:hover
+{
+    color: #ef8baa;
+    text-decoration: underline;
+    
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+#header6
+{
+    
+}
+
+#footer
+{
+    background: linear-gradient(to right, #9b180c, #4b2372);
+    background-size: 400% 400%;
+    height: 70px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+
+    -webkit-animation: movingGradient 30s ease infinite;
+    -moz-animation: movingGradient 30s ease infinite;
+    animation: movingGradient 30s ease infinite;
+}
+
+@-webkit-keyframes movingGradient
+{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes movingGradient
+{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes movingGradient
+{ 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#footerIcons
+{
+    background: transparent;
+    filter:invert();
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#footerIcons a
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+#footerIcons a img
+{
+    height: 30px;
+}
+
+#footerIcons a img:hover
+{
+    filter: contrast(100%);
 }
