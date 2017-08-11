@@ -250,7 +250,7 @@ nav
     left:0;
     right:0;
     bottom:0;
-    animation: backBlur 3s;
+    animation: backBlur 4s;
     animation-fill-mode:forwards;
 }
 
@@ -778,6 +778,17 @@ h2:hover #glyphs
     margin: 0 auto;
 }
 
+#profileZoom
+{
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    
+    border: 2px solid #AC2C56;
+    border-radius: 50px;
+}
+
 #picJumbo
 {
     background: #6e7b82;
@@ -785,6 +796,36 @@ h2:hover #glyphs
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#picJumbo img
+{
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+#picJumbo img:hover
+{
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #picJumbo h1
@@ -797,7 +838,7 @@ h2:hover #glyphs
 
 #aboutCont
 {
-    background-image: url("/assets/Mike4ss.jpg");
+    background-image: url("/assets/sitting2ss.jpg");
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
@@ -852,7 +893,7 @@ h2:hover #glyphs
 
 #header6
 {
-    
+    filter: drop-shadow(0px 5px 10px black);
 }
 
 #footer
@@ -869,22 +910,8 @@ h2:hover #glyphs
     animation: movingGradient 30s ease infinite;
 }
 
-@-webkit-keyframes movingGradient
-{
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-@-moz-keyframes movingGradient
-{
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 @keyframes movingGradient
-{ 
+{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -895,24 +922,55 @@ h2:hover #glyphs
     background: transparent;
     filter:invert();
     text-align: center;
-    height: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 340px;
+    margin-right: 340px;
+    padding: 0;
+    /*border: 1px solid green;*/
 }
 
-#footerIcons a
+#iconLinks
 {
     padding-left: 15px;
     padding-right: 15px;
     text-decoration: none;
 }
 
-#footerIcons a img
+#iconLinks img
 {
     height: 30px;
+    
+    -webkit-transition: filter 0.2s;
+    -moz-transition: filter 0.2s;
+    -o-transition: filter 0.2s;
+    transition: filter 0.2s;
 }
 
-#footerIcons a img:hover
+#footerIcons:hover #iconLinks:not(:hover) img
 {
-    filter: contrast(100%);
+    filter: blur(1.5px);
+    
+    -webkit-transition: filter 0.3s;
+    -moz-transition: filter 0.3s;
+    -o-transition: filter 0.3s;
+    transition: filter 0.3s;
+}
+
+
+@media (max-width: 780px)
+{
+    .backgroundImg
+    {
+        position: absolute;
+        background-image: url("/assets/headshot1s.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        animation: backBlur 4s;
+        animation-fill-mode:forwards;
+    }   
 }
