@@ -486,9 +486,25 @@ h2:hover #glyphs
     border-right-color: #F22613;
 }
 
+/*********************/
+/*Programming Section*/
+/*********************/
 #programmingBar
 {
     width: 100%;
+}
+
+#expRow
+{
+    display: none;
+}
+
+#expRow h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', thin;
+    font-weight: 100;
 }
 
 #programming
@@ -543,7 +559,7 @@ h2:hover #glyphs
 {
     background: transparent;
     color: #942E6C;
-    width: 300px;
+    max-width: 300px;
     font-size: 20px;
     outline: none;
     border-color: #942E6C;
@@ -957,20 +973,111 @@ h2:hover #glyphs
     transition: filter 0.3s;
 }
 
-
 @media (max-width: 780px)
 {
+    /**************/
+    /*First Header*/
+    /**************/
     .backgroundImg
     {
-        position: absolute;
+        position: initial;
+        background-image: url("");
+    }   
+    
+    #headerImage
+    {
         background-image: url("/assets/headshot1s.jpg");
         background-attachment: fixed;
+        background-position: center;
         background-size: cover;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        animation: backBlur 4s;
-        animation-fill-mode:forwards;
-    }   
+        height: 745px;
+        margin: 0 auto;
+    }
+    
+    /*********************/
+    /*Programming Section*/
+    /*********************/
+    #programming
+    {
+        height: 640px;
+    }
+    #expRow
+    {
+        display: initial;
+    }
+    
+    #skillsDiv
+    {
+        padding: 0px;
+    }
+    
+    #skill1 h1
+    {
+        display: none;
+    }
+    
+    #skill1 button
+    {
+        width: 100%;
+    }
+    
+    #skill1 h3
+    {
+        line-height: 0px;
+        margin: 7px;
+    }
+    
+    #skill2
+    {
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #codeExample
+    {
+        background: #6e7b82;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    /*********/
+    /*Headers*/
+    /*********/
+    #header2, #header3, #header4, #header5, #header6
+    {
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    #header2 h1, #header3 h1, #header4 h1, #header5 h1, #header6 h1
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    /******************/
+    /*Producer section*/
+    /******************/
+    #scDivs
+    {
+        margin: 0 auto;
+        overflow: hidden
+    }
+
+    #scDivs iframe
+    {
+        background: url("/assets/music_placeholder.png");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        border: 2px solid #942E6C;
+    }
+
 }

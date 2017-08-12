@@ -17,6 +17,16 @@ $(document).ready(function(){
         e.preventDefault();
         $('body').removeClass('nav-expanded');
     });
+    
+    //Rearrange divs according to screen size
+    if($(window).width()<780)
+    {
+        $("#skill1").remove().insertAfter($("#skill2"));
+    }
+    else
+    {
+        
+    }
 
     //Automatic Page scrolling
     var $root = $('html, body');
@@ -30,7 +40,7 @@ $(document).ready(function(){
     });
     
     //OMFG this next section took FOREVER to get it to behave the way I wanted it to
-    //Print Text to screen
+    //Prints Text to screen like a typewriter
     var clickDisabled = false;
     
     var showText = function(target, message, index, interval)
@@ -53,7 +63,7 @@ $(document).ready(function(){
         }
         
         $(exampleBox).empty();
-        showText("#exampleBox", '<div> Hello World! </div>', 0, 100);
+        showText("#exampleBox", '<h1> Hello World! </h1>', 0, 100);
         
         clickDisabled = true;
         setTimeout(function()
@@ -125,7 +135,7 @@ $(document).ready(function(){
         }
         
         $(exampleBox).empty();
-        showText("#exampleBox", '$(document.body).append("Hello World!");', 0, 100);
+        showText("#exampleBox", '$(document.body).append ("Hello World!");', 0, 100);
         
         clickDisabled = true;
         setTimeout(function()
