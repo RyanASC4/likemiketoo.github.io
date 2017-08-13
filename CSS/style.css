@@ -245,6 +245,7 @@ nav
     position: absolute;
     background-image: url("/assets/headshot1s.jpg");
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     top:0;
     left:0;
@@ -692,6 +693,7 @@ h2:hover #glyphs
 {
     background-image: url("/assets/Mike4ss.jpg");
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     text-align: center;
     margin: 0 auto;
@@ -812,6 +814,8 @@ h2:hover #glyphs
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right:10px;
 }
 
 #picJumbo img
@@ -866,7 +870,7 @@ h2:hover #glyphs
     margin: 0 auto;
 }
 
-.col-xs-4 img
+.col-sm-4 img
 {
     height: 100px;
 }
@@ -876,6 +880,7 @@ h2:hover #glyphs
     background: transparent;
     margin: 0 auto;
     padding: 30px;
+    padding-top: 0px;
     height: 100%;
 }
 
@@ -917,6 +922,7 @@ h2:hover #glyphs
     background: linear-gradient(to right, #9b180c, #4b2372);
     background-size: 400% 400%;
     height: 70px;
+    text-align: center;
     padding-right: 200px;
     padding-left: 200px;
     
@@ -937,11 +943,10 @@ h2:hover #glyphs
 {
     background: transparent;
     filter:invert();
+    max-width: 270px;
     text-align: center;
+    margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: 340px;
-    margin-right: 340px;
     padding: 0;
     /*border: 1px solid green;*/
 }
@@ -994,13 +999,16 @@ h2:hover #glyphs
         margin: 0 auto;
     }
     
+    #programming, #producer, #webDev, #aboutCont
+    {
+        height: 640px;
+        padding: 25px;
+        padding-bottom: 100px;
+    }
+    
     /*********************/
     /*Programming Section*/
     /*********************/
-    #programming
-    {
-        height: 640px;
-    }
     #expRow
     {
         display: initial;
@@ -1030,7 +1038,6 @@ h2:hover #glyphs
     #skill2
     {
         height: 100%;
-        margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 20px;
@@ -1039,11 +1046,8 @@ h2:hover #glyphs
 
     #codeExample
     {
-        background: #6e7b82;
         width: 100%;
         font-size: 20px;
-        text-align: center;
-        margin: 0 auto;
         padding: 10px;
     }
     
@@ -1065,19 +1069,79 @@ h2:hover #glyphs
     /******************/
     /*Producer section*/
     /******************/
-    #scDivs
+    #musicDiv, #aboutDiv
     {
-        margin: 0 auto;
-        overflow: hidden
+        padding: 10px;
     }
 
     #scDivs iframe
     {
-        background: url("/assets/music_placeholder.png");
-        background-size: cover;
-        background-position: center;
         height: 100%;
-        border: 2px solid #942E6C;
     }
+    
+    /*******************/
+    /*Developer Section*/
+    /*******************/
+    #webDiv h1
+    {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    #outer1
+    {
+        width: 100%;
+    }
+    #web1
+    {
+        width: 100%;
+    }
+    
+    #web1 i
+    {
+        opacity: .7;
+    }
+    
+    /**************/
+    /*AboutSection*/
+    /**************/
+    #aboutDiv
+    {
 
+    }
+    
+    #picJumbo
+    {
+        
+    }
+    
+    #aboutJumbo
+    {
+        padding: 0;
+    }
+    
+    #aboutJumbo h3
+    {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    /********/
+    /*Footer*/
+    /********/
+    #footer
+    {
+        padding: 0;
+        padding-top: 20px;
+    }
+    
+    #footerIcons
+    {
+        margin: 0 auto;
+    }
+    
+    #iconLinks
+    {
+        text-align: center;
+    }
 }
